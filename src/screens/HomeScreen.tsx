@@ -24,7 +24,6 @@ const HomeScreen: React.FC = () => {
   const { vibrationEnabled, notificationsEnabled, setNotificationsEnabled } = useSettings();
   const [motionDetected, setMotionDetected] = useState(false); // Start with detecting state
   const [movementCount, setMovementCount] = useState(12); // Start with initial count
-  const [movementCount] = useState(3);
   const [timeRange] = useState('16:05h and 16:15h');
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState('');
