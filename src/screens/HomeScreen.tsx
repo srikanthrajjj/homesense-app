@@ -206,7 +206,11 @@ const HomeScreen: React.FC = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
+      <ScrollView
+        style={styles.scrollView}
+        contentContainerStyle={styles.scrollViewContent}
+        showsVerticalScrollIndicator={false}
+      >
         {/* Header */}
         <View style={styles.header}>
           <TouchableOpacity onPress={handleBack} style={styles.backButton}>
@@ -350,6 +354,9 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 20,
   },
+  scrollViewContent: {
+    paddingBottom: 20, // Add bottom padding for proper spacing
+  },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -454,7 +461,7 @@ const styles = StyleSheet.create({
   menuContainer: {
     backgroundColor: Colors.white,
     borderRadius: 16,
-    marginBottom: 20,
+    marginBottom: 0, // Remove bottom margin to eliminate blank space
     shadowColor: Colors.black,
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,

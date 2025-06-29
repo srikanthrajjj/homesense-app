@@ -1,4 +1,4 @@
-# HomeSense - Smart Home Motion Detection
+# HomeSense - Smart Home Motion Detection 🏠
 
 A privacy-first mobile app for Deutsche Telekom that detects motion using WiFi signals without cameras.
 
